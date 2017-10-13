@@ -182,3 +182,7 @@
     {% endblock %}
   </body>
 </html>
+{% if page %}
+MkDocs version : {{ mkdocs_version }}
+Build Date UTC : {{ build_date_utc }}
+{% endif %}

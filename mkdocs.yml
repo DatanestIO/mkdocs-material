@@ -19,46 +19,58 @@
 # IN THE SOFTWARE.
 
 # Project information
-site_name: Material for MkDocs
-site_description: A Material Design theme for MkDocs
-site_author: Martin Donath
-site_url: http://squidfunk.github.io/mkdocs-material/
+site_name: Datanest | Docs
+site_description: Datanest Technical Documentations for Internal Usage
+site_author: Franheit Sangapta M
+# site_url: http://squidfunk.github.io/mkdocs-material/
+
+# Project Directory
+# docs_dir: repo/gitbooks/Import/technical-documentations
+docs_dir: technical-documentation
 
 # Repository
-repo_name: squidfunk/mkdocs-material
-repo_url: https://github.com/squidfunk/mkdocs-material
+repo_name: datanest-engine/technical-documentation
+# squidfunk/mkdocs-material
+
+repo_url: https://gitlab.com/datanest-engine/technical-documentation
+# https://github.com/squidfunk/mkdocs-material
 
 # Copyright
-copyright: 'Copyright &copy; 2016 - 2017 Martin Donath'
+copyright: 'Copyright &copy; Datanest | 2017'
 
 # Theme directory
+theme: mkdocs
 theme_dir: material
 
 # Options
+# Pallete color options:  red, pink, purple, deep purple, indigo, blue, light blue, cyan, teal, green, light green, lime, yellow, amber, orange, deep orange, brown, grey, and blue grey
+# Accent : means hyperlink
 extra:
   feature:
-    tabs: false
+    tabs: true
   palette:
-    primary: indigo
+    primary: blue
     accent: indigo
   social:
     - type: globe
-      link: http://struct.cc
+      link: https://datanest.io
     - type: github-alt
-      link: https://github.com/squidfunk
+      link: https://github.com/datanestIO
     - type: twitter
-      link: https://twitter.com/squidfunk
+      link: https://twitter.com/datanest
     - type: linkedin
-      link: https://linkedin.com/in/squidfunk
+      link: https://linkedin.com/in/datanest
+  version: v1.0
 
 # Extensions
 markdown_extensions:
   - markdown.extensions.admonition
-  - markdown.extensions.codehilite(guess_lang=false)
+  - markdown.extensions.codehilite(guess_lang=true)
   - markdown.extensions.def_list
   - markdown.extensions.footnotes
   - markdown.extensions.meta
   - markdown.extensions.toc(permalink=true)
+  - markdown.extensions.smarty
   - pymdownx.arithmatex
   - pymdownx.betterem(smart_enable=all)
   - pymdownx.caret
@@ -67,29 +79,35 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_generator: !!python/name:pymdownx.emoji.to_svg
   - pymdownx.inlinehilite
-  - pymdownx.magiclink
+  - pymdownx.magiclink(hide_protocol=true, repo_url_shortener=true, base_repo_url='')
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.superfences
   - pymdownx.tasklist(custom_checkbox=true)
   - pymdownx.tilde
+  - pymdownx.snippets
 
 # Page tree
+# pages:
+#  - Material: index.md
+#  - Getting started: getting-started.md
+#  - Extensions:
+#    - Admonition: extensions/admonition.md
+#    - CodeHilite: extensions/codehilite.md
+#    - Footnotes: extensions/footnotes.md
+#    - Metadata: extensions/metadata.md
+#    - Permalinks: extensions/permalinks.md
+#    - PyMdown: extensions/pymdown.md
+#  - Specimen: specimen.md
+#  - Customization: customization.md
+#  - Release notes: release-notes.md
+#  - Contributing: contributing.md
+#  - License: license.md
+
 pages:
-  - Material: index.md
-  - Getting started: getting-started.md
-  - Extensions:
-    - Admonition: extensions/admonition.md
-    - CodeHilite: extensions/codehilite.md
-    - Footnotes: extensions/footnotes.md
-    - Metadata: extensions/metadata.md
-    - Permalinks: extensions/permalinks.md
-    - PyMdown: extensions/pymdown.md
-  - Specimen: specimen.md
-  - Customization: customization.md
-  - Release notes: release-notes.md
-  - Contributing: contributing.md
-  - License: license.md
+#     - Home: index.md << README.md
+# - Knowledge Base: 
+#   - knowledge-base/index.md
 
 # Google Analytics
 google_analytics:

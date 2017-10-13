@@ -48,7 +48,9 @@
         <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
         and
         <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
-          Material for MkDocs</a>
+          Material for MkDocs </a>
+	|
+	<p>Last updated on {{ build_date_utc.strftime('%c') }}. | Build: {{ build_date_utc }}</p>
       </div>
       {% block social %}
         {% include "partials/social.html" %}
