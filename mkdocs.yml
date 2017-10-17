@@ -26,7 +26,12 @@ site_author: Franheit Sangapta M
 
 # Project Directory
 # docs_dir: repo/gitbooks/Import/technical-documentations
-docs_dir: technical-documentation
+
+# docs_dir: repo-datanest/developerdatanestio"
+docs_dir: "repo-datanest/developer.datanest.io"
+
+# docs_dir: repo/docker.github.io
+
 
 # Repository
 repo_name: datanest-engine/technical-documentation
@@ -51,6 +56,11 @@ extra:
   palette:
     primary: blue
     accent: indigo
+  font:
+    text: 'verdana' # segoe UI, verdana, arial, serif, sans-serif
+    code: 'monospaced'
+  feature:
+    tabs: true
   social:
     - type: globe
       link: https://datanest.io
@@ -61,6 +71,8 @@ extra:
     - type: linkedin
       link: https://linkedin.com/in/datanest
   version: v1.0
+extra_css:
+  - 'stylesheets/extra.css'
 
 # Extensions
 markdown_extensions:
