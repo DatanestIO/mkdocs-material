@@ -22,23 +22,14 @@
 site_name: Datanest | Docs
 site_description: Datanest Technical Documentations for Internal Usage
 site_author: Franheit Sangapta M
-# site_url: http://squidfunk.github.io/mkdocs-material/
 
 # Project Directory
-# docs_dir: repo/gitbooks/Import/technical-documentations
-
-# docs_dir: repo-datanest/developerdatanestio"
 docs_dir: "repo-datanest/developer.datanest.io"
 
-# docs_dir: repo/docker.github.io
-
-
 # Repository
-repo_name: datanest-engine/technical-documentation
-# squidfunk/mkdocs-material
+repo_name: datanest-engine/developer.datanest.io
 
 repo_url: https://gitlab.com/datanest-engine/technical-documentation
-# https://github.com/squidfunk/mkdocs-material
 
 # Copyright
 copyright: 'Copyright &copy; Datanest | 2017'
@@ -115,11 +106,6 @@ markdown_extensions:
 #  - Release notes: release-notes.md
 #  - Contributing: contributing.md
 #  - License: license.md
-
-pages:
-#     - Home: index.md << README.md
-# - Knowledge Base: 
-#   - knowledge-base/index.md
 
 # Google Analytics
 google_analytics:
