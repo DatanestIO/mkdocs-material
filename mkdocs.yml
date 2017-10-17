@@ -19,12 +19,13 @@
 # IN THE SOFTWARE.
 
 # Project information
-site_name: Datanest | Docs
+site_name: Datanest | Developer Team
 site_description: Datanest Technical Documentations for Internal Usage
 site_author: Franheit Sangapta M
 
 # Project Directory
-docs_dir: "repo-datanest/developer.datanest.io"
+# You can your custom directory by modifiying this config
+docs_dir: docs
 
 # Repository
 repo_name: datanest-engine/developer.datanest.io
