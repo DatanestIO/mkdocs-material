@@ -62,8 +62,8 @@ extra:
     - type: linkedin
       link: https://linkedin.com/in/datanest
   version: v1.0
-extra_css:
-  - 'stylesheets/extra.css'
+# extra_css:
+#   - 'stylesheets/extra.css'
 
 # Extensions
 markdown_extensions:
