@@ -25,11 +25,10 @@ site_author: Franheit Sangapta M
 
 # Project Directory
 # You can your custom directory by modifiying this config
-docs_dir: docs
+# docs_dir: docs
 
 # Repository
 repo_name: datanest-engine/developer.datanest.io
-
 repo_url: https://gitlab.com/datanest-engine/technical-documentation
 
 # Copyright
