@@ -48,13 +48,15 @@ export default class Toggle {
     /* Initialize offset and state */
     this.offset_ = 5
     this.active_ = false
+    this.lastscroll_ = 0
   }
 
   /**
    * Update visibility
    */
   update() {
-    const active = window.pageYOffset >= this.offset_
+    const active = this.lastscroll_ < window.pageYOffset
+    this.lastscroll_ = window.pageYOffset
     if (active !== this.active_)
       this.el_.dataset.mdState = (this.active_ = active) ? "hidden" : ""
   }

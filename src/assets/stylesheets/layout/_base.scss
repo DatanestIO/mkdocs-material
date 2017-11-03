@@ -89,6 +89,10 @@ hr {
   margin-left: auto;
 }
 
+.md-header-nav.md-grid, .md-tabs__inner.md-grid, .md-main__inner.md-grid {
+  max-width: none;
+}
+
 // Prevent collapse of margin when setting margin on child element
 .md-container,
 .md-main {
