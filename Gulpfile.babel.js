@@ -153,8 +153,8 @@ gulp.src = (...glob) => {
         this.emit("end")
 
         /* Throw error and abort, if not in watch mode */
-        if (args._[0] !== "watch")
-          throw error
+        // if (args._[0] !== "watch")
+        //   throw error
       }))
 }
 
